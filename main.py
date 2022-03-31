@@ -21,7 +21,7 @@ if kauba_kogus < 1000:
     taxed_hind5 = kauba_kogus + (kauba_kogus * float(asukoht))
     print("Kogusumma maksudega" ,taxed_hind5, "$")
 
-#Siin arvutab riigimaksud ja discounti ja seejärel väljastab lõpphinna
+#Siin arvutab riigimaksud ja discounti ja seejärel väljastab lõpphinna (uuesti unustasin deliver panna)
 if kauba_kogus >= 1000 and kauba_kogus < 5000:
     discounted_hind =  kauba_kogus - (kauba_kogus * 0.03)
     taxed_hind = (discounted_hind * float(asukoht) + discounted_hind)
