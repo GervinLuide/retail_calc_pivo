@@ -19,28 +19,32 @@ elif asukoht == "CA":
 #Siin arvutab riigimaksud ja väljastab lõpphinna koos maksudega
 if kauba_kogus < 1000:
     taxed_hind5 = kauba_kogus + (kauba_kogus * float(asukoht))
+#väljastab lõpphinna
     print("Kogusumma maksudega" ,taxed_hind5, "$")
 
 #Siin arvutab riigimaksud ja discounti ja seejärel väljastab lõpphinna (uuesti unustasin deliver panna)
 if kauba_kogus >= 1000 and kauba_kogus < 5000:
     discounted_hind =  kauba_kogus - (kauba_kogus * 0.03)
     taxed_hind = (discounted_hind * float(asukoht) + discounted_hind)
+#väljastab lõpphinna
     print("Kogusumma koos soodustuse ja maksudega" ,taxed_hind, "$")
 #Siin võtab lisa soodustuse maha lõpphinnast kui hind on 5000 või suurem
 if kauba_kogus >= 5000 and kauba_kogus < 7000:
     discounted_hind1 =  (kauba_kogus - (kauba_kogus * 0.05)) - 100
     taxed_hind1 = (discounted_hind1 * float(asukoht) + discounted_hind1)
-
+#väljastab lõpphinna
     print("Kogusumma koos soodustuse ja maksudega", taxed_hind1, "$")
 
 if kauba_kogus >= 7000 and kauba_kogus < 10000:
     discounted_hind2 =  (kauba_kogus - (kauba_kogus * 0.07)) - 200
     taxed_hind2 = (discounted_hind2 * float(asukoht) + discounted_hind2)
+#väljastab lõpphinna
     print("Kogusumma koos soodustuse ja maksudega", taxed_hind2, "$")
 
 if kauba_kogus >= 10000 and kauba_kogus < 50000:
     discounted_hind3 =  (kauba_kogus - (kauba_kogus * 0.15)) - 300
     taxed_hind3 = (discounted_hind3 * float(asukoht) + discounted_hind3)
+#väljastab lõpphinna
     print("Kogusumma koos soodustuse ja maksudega", taxed_hind3, "$")
 
 
