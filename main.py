@@ -5,6 +5,18 @@ asukoht = input("Sisestage State: ").upper()
 esialgne_kauba_hind = kauba_kogus
 print( "kauba alghind on",esialgne_kauba_hind, "$",)
 
+if asukoht == "UT":
+    asukoht = 0.0685
+elif asukoht == "NV":
+    asukoht = 0.08
+elif asukoht == "TX":
+    asukoht = 0.0625
+elif asukoht == "AL":
+    asukoht = 0.04
+elif asukoht == "CA":
+    asukoht = 0.0825
+
+
 if kauba_kogus < 1000:
     taxed_hind5 = kauba_kogus + (kauba_kogus * float(asukoht))
     print("Kogusumma maksudega" ,taxed_hind5, "$")
